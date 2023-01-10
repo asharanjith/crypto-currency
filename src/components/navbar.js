@@ -5,8 +5,10 @@ import { FaMicrophone, FaRegSun } from 'react-icons/fa';
 
 const NavBar = () => (
   <div className="navBar">
-    <NavLink to="/"><IoArrowBackCircleSharp /></NavLink>
-    <NavLink to="/">Logo</NavLink>
+    <div className="logo">
+      <NavLink to="/"><IoArrowBackCircleSharp /></NavLink>
+      <NavLink to="/">Logo</NavLink>
+    </div>
     <div className="navIcons">
       <NavLink to="/"><FaMicrophone /></NavLink>
       <NavLink to="/"><FaRegSun /></NavLink>

@@ -1,11 +1,14 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
+import logger from 'redux-logger';
+import fetchCoinReducer from './fetchCoin';
 
-const rootReducer = combineReducers({
-  // Add your reducers here
+const rootreducer = combineReducers({
+  allCoins: fetchCoinReducer,
 });
 
 const store = configureStore({
-  reducer: rootReducer,
+  reducer: rootreducer,
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 });
 
 export default store;
