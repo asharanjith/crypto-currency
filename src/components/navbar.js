@@ -1,19 +1,28 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { IoArrowBackCircleSharp } from 'react-icons/io5';
 import { FaMicrophone, FaRegSun } from 'react-icons/fa';
 
-const NavBar = () => (
-  <div className="navBar">
-    <div className="logo">
-      <NavLink to="/"><IoArrowBackCircleSharp /></NavLink>
-      <NavLink to="/">Logo</NavLink>
+const NavBar = () => {
+  const location = useLocation();
+  let goBack = '';
+  if (location.pathname !== '/') {
+    goBack = true;
+  } else {
+    goBack = false;
+  }
+
+  return (
+    <div className="navBar">
+      {goBack ? <NavLink to="/"><IoArrowBackCircleSharp /></NavLink> : null}
+      {'  '}
+      <NavLink to="/">Crypto Currency</NavLink>
+      <div className="navIcons">
+        <NavLink to="/"><FaMicrophone /></NavLink>
+        <NavLink to="/"><FaRegSun /></NavLink>
+      </div>
     </div>
-    <div className="navIcons">
-      <NavLink to="/"><FaMicrophone /></NavLink>
-      <NavLink to="/"><FaRegSun /></NavLink>
-    </div>
-  </div>
-);
+  );
+};
 
 export default NavBar;

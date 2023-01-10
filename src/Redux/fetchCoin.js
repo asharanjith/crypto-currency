@@ -2,7 +2,6 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 const FETCHCOIN = 'CRYPTOCURRENCY/REDUX/FETCHCOIN';
-// const FETCHCOIN_DETAIL = 'FETCHCOIN_DETAIL';
 const baseURL = 'https://api.coingecko.com/api/v3/coins';
 
 export const fetchCoins = createAsyncThunk(
