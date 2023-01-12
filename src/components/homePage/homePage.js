@@ -30,7 +30,7 @@ const HomePage = (props) => {
             <div
               className="homePage__product"
               key={product.id}
-              style={index % 2 === 0 ? { backgroundColor: '#0096c7' } : { backgroundColor: '#00b4d8' }}
+              style={index % 3 === 0 ? { backgroundColor: '#0096c7' } : { backgroundColor: '#00b4d8' }}
             >
               {innerwidth > 500 ? (
                 <img

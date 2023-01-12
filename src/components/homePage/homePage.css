@@ -73,19 +73,26 @@
 }
 
 .product-name {
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin: 10px 0;
+  font-size: 20px;
+  font-weight: 800;
+  margin: 10px 0 0 0;
 }
 
 @media screen and (max-width: 768px) {
+  .homePage__search {
+    margin-bottom: 10px;
+  }
+
   .homePage__products {
     justify-content: center;
   }
 
   .homePage__product {
-    width: 150px;
+    width: 50%;
     height: 180px;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
   }
 
   .product-image {
