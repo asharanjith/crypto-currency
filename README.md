@@ -65,7 +65,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> [Click Here](https://space-travellers-hub-six.vercel.app/)
+> [Click Here](https://crypto-currency-9i1l.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -92,7 +92,7 @@
 
 Clone this repository to your desired folder:
 
-- `git clone https://github.com/lukman155/space-travellers-hub.git`
+- `https://github.com/asharanjith/crypto-currency.git`
 
 ### Install
 
@@ -139,7 +139,7 @@ Example command:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[Add some icons for getting more details about the missions and rockets in each page]**
+- [ ] **[Add weblink to the corresponding coins]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -169,6 +169,7 @@ If you like this project...
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
  I would like to thank the Microverse team for their great support!
+ Original design idea by [Nelson Sakwa on Behance.](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
