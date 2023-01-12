@@ -65,7 +65,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> [Click Here](https://crypto-currency-9i1l.vercel.app/)
+> [Click Here](https://crypto-currency-9i1l-8rs67g36y-asharanjith.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
