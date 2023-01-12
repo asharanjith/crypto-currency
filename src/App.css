@@ -1,18 +1,21 @@
 .navBar{
-  background-color: #333;
+  background-color: #03045e;
   overflow: hidden;
   width: 100%;  
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 3% ;
   z-index: 1;
   height: 50px;
   position: fixed;
 }
 a {
   text-decoration: none;
-  color: white;
+  color: #caf0f8;
+}
+.back{
+  width: 25%;
 }
 .navIcons{
   display: flex;
@@ -24,3 +27,10 @@ a {
 .navIcons a{
   margin: 0 auto;
 }
+@media screen and (max-width: 600px) {
+  .navBar {
+  padding: 0 12% 0 0;
+  }
+
+}
+  

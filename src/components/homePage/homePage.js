@@ -26,8 +26,12 @@ const HomePage = (props) => {
       <div className="homePage__products">
         {allData
           .filter((product) => product.name.toLowerCase().includes(search.toLowerCase()))
-          .map((product) => (
-            <div className="homePage__product" key={product.id}>
+          .map((product, index) => (
+            <div
+              className="homePage__product"
+              key={product.id}
+              style={index % 2 === 0 ? { backgroundColor: '#0096c7' } : { backgroundColor: '#00b4d8' }}
+            >
               {innerwidth > 500 ? (
                 <img
                   src={product.image.large}

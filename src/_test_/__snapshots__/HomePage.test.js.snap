@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomePage should render correctly 1`] = `
+<div
+  className="homePage"
+>
+  <form
+    className="homePage__search"
+  >
+    <input
+      onChange={[Function]}
+      placeholder="Search"
+      type="text"
+      value=""
+    />
+     
+  </form>
+  <div
+    className="homePage__products"
+  />
+</div>
+`;

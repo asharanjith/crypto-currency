@@ -14,7 +14,15 @@ const NavBar = () => {
 
   return (
     <div className="navBar">
-      {goBack ? <NavLink to="/"><IoArrowBackCircleSharp /></NavLink> : null}
+      {goBack ? (
+        <NavLink to="/">
+          <span>
+            <IoArrowBackCircleSharp className="back" />
+            {' '}
+            Back
+          </span>
+        </NavLink>
+      ) : null}
       {'  '}
       <NavLink to="/">Crypto Currency</NavLink>
       <div className="navIcons">

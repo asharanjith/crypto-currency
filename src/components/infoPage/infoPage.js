@@ -28,12 +28,46 @@ const InfoPage = (props) => {
           <img src={product.image.small} alt={product.name} className="product-image-detail" />
         )}
         <div className="infoPage__productDetails">
-          <h3>{product.name}</h3>
-          <p>{product.symbol}</p>
-          <p>
-            Price:
-            {product.market_data.current_price.usd}
-          </p>
+          <h3>
+            {product.name }
+            &nbsp;
+            {' ( '}
+            {product.symbol}
+            {' )'}
+          </h3>
+
+          <div className="market_data">
+            <p>Price in USD </p>
+            <p>{product.market_data.current_price.usd}</p>
+            <p>Last updated on</p>
+            <p>
+              {product.last_updated}
+            </p>
+            <p>Total Volume in USD</p>
+            <p>
+              {product.market_data.total_volume.usd}
+            </p>
+            <p>Price change in 24h</p>
+            <p>
+              {product.market_data.price_change_24h}
+            </p>
+            <p>Price change percentage in 1yr</p>
+            <p>
+              {product.market_data.price_change_percentage_1y}
+            </p>
+            <p>Market cap</p>
+            <p>
+              {product.market_data.market_cap.usd}
+            </p>
+            <p>Total supply</p>
+            <p>
+              {product.market_data.total_supply}
+            </p>
+            <p>Circulating supply </p>
+            <p>
+              {product.market_data.circulating_supply}
+            </p>
+          </div>
         </div>
       </div>
       <button
@@ -44,6 +78,9 @@ const InfoPage = (props) => {
       >
         Go Back
       </button>
+      <footer>
+        Copyright reserved. All rights reserved
+      </footer>
     </div>
   );
 };
