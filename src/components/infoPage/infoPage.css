@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     background-color: #0077b6;
-    padding: 80px 20px;
+    padding-top: 80px;
     width: 100%;
     height: 100%;
     color: #333;
@@ -15,6 +15,7 @@
     align-items: center;
     justify-content: center;    
     background-color: #0077b6;
+    width:100%;
 }
 .product-image-detail{
     width: 10%;
@@ -29,7 +30,7 @@
     justify-content: center;
     flex-wrap: wrap;
     background-color: #0077b6;
-    margin: 20px 0;
+    /* margin: 20px 0; */
 }
 .infoPage__productDetails h3{
     font-size: 1.5rem;
@@ -38,12 +39,8 @@
     text-align: center;
 }
 .market_data{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    /* grid-gap: 10px; */
     background-color: #0077b6;
-    padding: 20px;
+    /* padding: 20px; */
 
 }
 .market_data :nth-child(1n){
@@ -52,14 +49,17 @@
 .market_data :nth-child(2n){
     background-color: #48cae4;
 }
-
+/* .market_data :nth-child(2n+1){
+    background-color: white;
+} */
+.market_data p :nth-child(2n){
+    background-color: white;
+}
 
 .market_data p{
     font-size: 1.2rem;
     font-weight: 500;
     padding: 10px;  
-    border: 1px solid #333; 
-    border-radius: 5px;
 }
 .infoPage button{
     width: 100px;
@@ -70,6 +70,7 @@
     font-size: 1.2rem;
     font-weight: 500;
     color: #333;
+    margin:15px;
 }
 .infoPage button:hover{
     background-color: #03045e;
@@ -85,4 +86,8 @@ footer{
     bottom: 0;
     width: 100%;
 }
+/* .productValue{
+    margin-left: 1rem;
+    text-align: left;
+} */
    

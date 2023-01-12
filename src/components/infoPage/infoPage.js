@@ -37,36 +37,58 @@ const InfoPage = (props) => {
           </h3>
 
           <div className="market_data">
-            <p>Price in USD </p>
-            <p>{product.market_data.current_price.usd}</p>
-            <p>Last updated on</p>
             <p>
+              Price in USD
+&nbsp;&nbsp;&nbsp;
+              {product.market_data.current_price.usd}
+            </p>
+            <p>
+              Last updated on
+              &nbsp;
               {product.last_updated}
             </p>
-            <p>Total Volume in USD</p>
             <p>
+              Total Volume in USD
+              &nbsp;&nbsp;&nbsp;
               {product.market_data.total_volume.usd}
+
             </p>
-            <p>Price change in 24h</p>
+
             <p>
+              Price change in 24h
+              &nbsp;&nbsp;&nbsp;
               {product.market_data.price_change_24h}
+
             </p>
-            <p>Price change percentage in 1yr</p>
+
             <p>
+              Price change % in 1yr
+              &nbsp;&nbsp;&nbsp;
               {product.market_data.price_change_percentage_1y}
+
             </p>
-            <p>Market cap</p>
+
             <p>
+              Market cap
+              &nbsp;&nbsp;&nbsp;
               {product.market_data.market_cap.usd}
+
             </p>
-            <p>Total supply</p>
+
             <p>
+              Total supply
+              &nbsp;&nbsp;&nbsp;
               {product.market_data.total_supply}
+
             </p>
-            <p>Circulating supply </p>
+
             <p>
+              Circulating supply
+              &nbsp;&nbsp;&nbsp;
               {product.market_data.circulating_supply}
+
             </p>
+
           </div>
         </div>
       </div>
