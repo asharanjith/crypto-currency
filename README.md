@@ -126,12 +126,6 @@ Example command:
 
 ## 👤 Author <a name="authors"></a>
 
-👤 **Lukman Abdulkarim**
-
-- GitHub: [@Lukman](https://github.com/lukman155)
-- Twitter: [@Luk, A man](https://twitter.com/lukmanabdulka18)
-- LinkedIn: [Lukman Abdulkarim](https://www.linkedin.com/in/lukmanbaba/)
-
 👤 **Asha S Vijayan**
 
 - GitHub: [@asharanjith](https://github.com/asharanjith)
