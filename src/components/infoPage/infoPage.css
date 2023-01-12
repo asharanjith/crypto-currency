@@ -1,0 +1,105 @@
+.infoPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0077b6;
+  padding-top: 80px;
+  width: 100%;
+  height: 100%;
+  color: #333;
+}
+
+.infoPage__product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0077b6;
+  width: 100%;
+}
+
+.product-image-detail {
+  width: 10%;
+  height: 40%;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+
+.infoPage__productDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #0077b6;
+
+  /* margin: 20px 0; */
+}
+
+.infoPage__productDetails h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.market_data {
+  background-color: #0077b6;
+
+  /* padding: 20px; */
+}
+
+.market_data :nth-child(1n) {
+  background-color: #00b4d8;
+}
+
+.market_data :nth-child(2n) {
+  background-color: #48cae4;
+}
+
+/* .market_data :nth-child(2n+1){
+    background-color: white;
+} */
+.market_data p :nth-child(2n) {
+  background-color: white;
+}
+
+.market_data p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.infoPage button {
+  width: 100px;
+  height: 50px;
+  background-color: #48cae4;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  margin: 15px;
+}
+
+.infoPage button:hover {
+  background-color: #03045e;
+  color: #fff;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #03045e;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* .productValue{
+    margin-left: 1rem;
+    text-align: left;
+} */
