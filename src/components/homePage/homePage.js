@@ -20,7 +20,6 @@ const HomePage = (props) => {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
-
         {' '}
       </form>
       <div className="homePage__products">
@@ -30,7 +29,11 @@ const HomePage = (props) => {
             <div
               className="homePage__product"
               key={product.id}
-              style={index % 3 === 0 ? { backgroundColor: '#0096c7' } : { backgroundColor: '#00b4d8' }}
+              style={
+                index % 3 === 0
+                  ? { backgroundColor: '#0096c7' }
+                  : { backgroundColor: '#00b4d8' }
+              }
             >
               {innerwidth > 500 ? (
                 <img
@@ -39,16 +42,16 @@ const HomePage = (props) => {
                   className="product-image"
                 />
               ) : (
-                <img
-                  src={product.image.small}
-                  alt={product.name}
-                />
+                <img src={product.image.small} alt={product.name} />
               )}
               <div className="homePage__productDetails">
                 <h3 className="product-name">
                   {product.name}
-                &nbsp;
-                  <BsInfoCircle className="infoButton" onClick={() => navigate(`/info/${product.id}`)} />
+                  &nbsp;
+                  <BsInfoCircle
+                    className="infoButton"
+                    onClick={() => navigate(`/info/${product.id}`)}
+                  />
                 </h3>
                 <p>{product.symbol}</p>
                 <p>
